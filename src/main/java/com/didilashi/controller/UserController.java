@@ -38,4 +38,20 @@ public class UserController {
 		
 	}
 	
+	@RequestMapping("/findByUsername")
+	public User findByUsername(String username){	
+		return userService.findByUsername(username);	
+		
+	}
+	
+	@RequestMapping("/QFind")
+	public User qFind(String username){	
+		return userService.qFind(username);	
+		
+	}
+	@RequestMapping("/findByPhone")
+	public Iterable<User> findByPhone(String Phone){	
+		return userService.findByPhone(Phone);	
+		
+	}
 }

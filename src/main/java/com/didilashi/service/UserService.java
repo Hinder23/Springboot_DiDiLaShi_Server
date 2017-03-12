@@ -26,4 +26,14 @@ public class UserService {
 		return userRepository.findAll();		
 	}
 	
+	public Iterable<User> findByPhone(String phone){
+		return userRepository.findByPhone(phone);		
+	}
+	public User findByUsername(String username){
+		return userRepository.findByUsername(username);		
+	}
+	
+	public User qFind(String username){
+		return userRepository.QFind(username);		
+	}
 }
