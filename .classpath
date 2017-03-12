@@ -23,6 +23,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/taobao_sdk"/>
 	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Aliyun_springboot"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
