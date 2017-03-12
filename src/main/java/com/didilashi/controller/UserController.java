@@ -2,6 +2,7 @@ package com.didilashi.controller;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,11 @@ public class UserController {
 
 	@Resource
 	private UserService userService;
+	
+	@Autowired
+	private UserService userService2;
+
+	
 	
 	@RequestMapping("/save")
 	public String save(){
@@ -54,4 +60,22 @@ public class UserController {
 		return userService.findByPhone(Phone);	
 		
 	}
+	
+	@RequestMapping("/update")
+	public User update(String username){	
+		User user= userService.findByUsername(username);	
+		user.setPassword("wuxinda");
+		userService.save(user);
+		return user;
+	}
+	
+	@RequestMapping("/getOne")
+	public User getOne(String name){
+		User user=userService2.getOne(name);
+		return user;
+	}
+	
+	
+	
+	
 }
