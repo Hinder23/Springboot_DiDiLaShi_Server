@@ -13,7 +13,8 @@
 
           public interface UserRepository extends CrudRepository<User, Integer>{}  
 
-        5.创建UserSerice ，@Service  @Resource  @Transactional  【save update delete 方法需要绑定事务使用@Transaction进行事务的绑定】  
+        5.创建UserSerice @Service @Resource @Transactional  
+            【save update delete 方法需要绑定事务使用@Transaction进行事务的绑定】  
 
         6.创建Controller   
 
