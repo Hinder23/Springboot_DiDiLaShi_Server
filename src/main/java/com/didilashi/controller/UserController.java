@@ -56,7 +56,7 @@ public class UserController {
 		
 	}
 	@RequestMapping("/findByPhone")
-	public Iterable<User> findByPhone(String Phone){	
+	public User findByPhone(String Phone){	
 		return userService.findByPhone(Phone);	
 		
 	}

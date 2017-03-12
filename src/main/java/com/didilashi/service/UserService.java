@@ -38,7 +38,7 @@ public class UserService {
 		return userRepository.findAll();		
 	}
 	
-	public Iterable<User> findByPhone(String phone){
+	public User findByPhone(String phone){
 		return userRepository.findByPhone(phone);		
 	}
 	public User findByUsername(String username){
