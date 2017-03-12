@@ -1,8 +1,8 @@
 # Springboot_DiDiLaShi_Server
   完成了hibenate的集成（一）：
     步骤：
-          1. 配制maven的相关文件
-          2. 持久化配制（连接数据库）：src/main/resource--application.properties
+          1. 配制maven的相关文件  /n
+          2. 持久化配制（连接数据库）：src/main/resource--application.properties /n
           3.创建Bean，使用了@Entity【import javax.persistence.Entity;】
           4.创建UserRepository 用户库。
             public interface UserRepository extends CrudRepository<User, Integer>{}
